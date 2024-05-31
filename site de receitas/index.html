@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas Modernas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <img src="./arquivos/logo.png" alt="Logo">
+    </div>
+
+    <div class="banner"></div>
+
+    <div class="conteudo">
+        <h1 class="titulo-receita">RECEITA - MACARRÃO À CARBONARA</h1>
+        <div class="card">
+            <h1>INGREDIENTES</h1>
+            <ul>
+                <li>200g de macarrão tipo espaguete</li>
+                <li>100g de pancetta ou bacon em cubos</li>
+                <li>2 ovos</li>
+                <li>50g de queijo parmesão ralado</li>
+                <li>2 dentes de alho</li>
+                <li>Sal e pimenta-do-reino a gosto</li>
+                <li>Salsinha picada (opcional)</li>
+            </ul>
+            <a href="https://www.amazon.com.br" class="botao">Comprar ingredientes</a>
+        </div>
+        <div class="card">
+            <h1>MODO DE PREPARO</h1>
+            <ol>
+                <li>Cozinhe o macarrão em água salgada conforme as instruções da embalagem.</li>
+                <li>Enquanto isso, frite a pancetta ou o bacon até ficar crocante. Reserve.</li>
+                <li>Em uma tigela, bata os ovos e misture com o queijo parmesão ralado.</li>
+                <li>Escorra o macarrão e adicione imediatamente à panela com a pancetta, misturando bem.</li>
+                <li>Retire a panela do fogo e adicione a mistura de ovos e queijo, mexendo rapidamente para formar um molho cremoso.</li>
+                <li>Tempere com sal e pimenta-do-reino a gosto. Sirva com salsinha picada, se desejar.</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h1>Adicionar Nova Receita</h1>
+            <form id="form-receita">
+                <label for="titulo">Título da Receita:</label>
+                <input type="text" id="titulo" name="titulo" required><br>
+                
+                <label for="ingredientes">Ingredientes:</label>
+                <textarea id="ingredientes" name="ingredientes" required></textarea><br>
+                
+                <label for="preparo">Modo de Preparo:</label>
+                <textarea id="preparo" name="preparo" required></textarea><br>
+                
+                <button type="submit" class="botao">Adicionar Receita</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h1>Receitas Adicionadas</h1>
+            <div id="lista-receitas"></div>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
